@@ -1,5 +1,22 @@
 {
     "promo": "Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!",
     "shop": "Shop Now",
-    "lang_label": "English"
+    "lang_label": "English",
+    "nav_home": "Home",
+    "nav_contact": "Contact",
+    "nav_about": "About",
+    "nav_signup": "Sign Up",
+    "search_placeholder": "What are you looking for?",
+    "cat_woman": "Woman’s Fashion",
+    "cat_man": "Men’s Fashion",
+    "cat_electronics": "Electronics",
+    "cat_home": "Home & Lifestyle",
+    "cat_medicine": "Medicine",
+    "cat_sports": "Sports & Outdoor",
+    "cat_baby": "Baby’s & Toys",
+    "cat_groceries": "Groceries & Pets",
+    "cat_health": "Health & Beauty",
+    "banner_series": "iPhone 14 Series",
+    "banner_title": "Up to 10% off Voucher",
+    "shop_now": "Shop Now"
 }

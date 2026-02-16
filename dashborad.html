@@ -7,23 +7,167 @@
     <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
-    <header>
-        <div data-i18n="promo" name="dashboard">
-            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
-        </div>
-        
-        <h3 data-i18n="shop">Shop Now</h3>
-
-        <div class="bahasa">
-            <span id="current-lang">English</span>
-            <div class="dropdown-content">
-                <p onclick="changeLanguage('id')">Indonesia</p>
-                <p onclick="changeLanguage('en')">English</p>
-                <p onclick="changeLanguage('jp')">日本語</p>
+<header>
+    <div class="top-header">
+        <div data-i18n="promo">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</div>
+        <div class="top-header-links">
+            <h3 data-i18n="shop">Shop Now</h3>
+            <div class="bahasa">
+                <span id="current-lang">English</span>
+                <div class="dropdown-content">
+                    <p onclick="changeLanguage('id')">Indonesia</p>
+                    <p onclick="changeLanguage('en')">English</p>
+                    <p onclick="changeLanguage('jp')">日本語</p>
+                </div>
             </div>
         </div>
-    </header>
+    </div>
 
+    <nav class="main-nav">
+        <h1 class="logo">Exclusive</h1>
+        <ul>
+            <li><a href="#" data-i18n="nav_home">Home</a></li>
+            <li><a href="#" data-i18n="nav_contact">Contact</a></li>
+            <li><a href="#" data-i18n="nav_about">About</a></li>
+            <li><a href="#" data-i18n="nav_signup">Sign Up</a></li>
+        </ul>
+        <div class="nav-icons">
+    <div class="search-box">
+        <input type="text" data-i18n-placeholder placeholder="What are you looking for?">
+        <button type="submit">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+    </div>
+    <div class="icons">
+        <a href="#" class="icon-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.84-8.84 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+        </a>
+        <a href="#" class="icon-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        </a>
+    </div>
+</div>
+    </nav>
+</header>
+
+<main class="container">
+<aside class="sidebar">
+    <ul>
+        <li>
+            <a href="#">
+                <span data-i18n="cat_woman">Woman’s Fashion</span>
+                <span class="arrow">❯</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span data-i18n="cat_man">Men’s Fashion</span>
+                <span class="arrow">❯</span>
+            </a>
+        </li>
+        <li><a href="#" data-i18n="cat_electronics">Electronics</a></li>
+        <li><a href="#" data-i18n="cat_home">Home & Lifestyle</a></li>
+        <li><a href="#" data-i18n="cat_medicine">Medicine</a></li>
+        <li><a href="#" data-i18n="cat_sports">Sports & Outdoor</a></li>
+        <li><a href="#" data-i18n="cat_baby">Baby’s & Toys</a></li>
+        <li><a href="#" data-i18n="cat_groceries">Groceries & Pets</a></li>
+        <li><a href="#" data-i18n="cat_health">Health & Beauty</a></li>
+    </ul>
+</aside>
+
+    <section class="slider-container">
+        <div class="slider-wrapper" id="slider-wrapper">
+            <div class="slide active">
+                <div class="banner-content">
+                    <div class="brand">
+                        <img src="1200px-Apple_gray_logo 1.png" alt="Apple" class="apple-logo">
+                        <span data-i18n="banner_series">iPhone 14 Series</span>
+                    </div>
+                    <h1 data-i18n="banner_title">Up to 10% off Voucher</h1>
+                    <div class="shop-now-link">
+                        <a href="#" data-i18n="shop_now">Shop Now</a>
+                        <span>→</span>
+                    </div>
+                </div>
+                <div class="banner-image">
+                    <img src="hero_endframe__cvklg0xk3w6e_large 2.png" alt="Slide 1">
+                </div>
+            </div>
+            <div class="slide active">
+                <div class="banner-content">
+                    <div class="brand">
+                        <img src="1200px-Apple_gray_logo 1.png" alt="Apple" class="apple-logo">
+                        <span data-i18n="banner_series">iPhone 14 Series</span>
+                    </div>
+                    <h1 data-i18n="banner_title">Up to 10% off Voucher</h1>
+                    <div class="shop-now-link">
+                        <a href="#" data-i18n="shop_now">Shop Now</a>
+                        <span>→</span>
+                    </div>
+                </div>
+                <div class="banner-image">
+                    <img src="" alt="Slide 1">
+                </div>
+            </div>
+                        <div class="slide active">
+                <div class="banner-content">
+                    <div class="brand">
+                        <img src="1200px-Apple_gray_logo 1.png" alt="Apple" class="apple-logo">
+                        <span data-i18n="banner_series">iPhone 14 Series</span>
+                    </div>
+                    <h1 data-i18n="banner_title">Up to 10% off Voucher</h1>
+                    <div class="shop-now-link">
+                        <a href="#" data-i18n="shop_now">Shop Now</a>
+                        <span>→</span>
+                    </div>
+                </div>
+                <div class="banner-image">
+                    <img src="hero_endframe__cvklg0xk3w6e_large 2.png" alt="Slide 1">
+                </div>
+            </div>
+                        <div class="slide active">
+                <div class="banner-content">
+                    <div class="brand">
+                        <img src="1200px-Apple_gray_logo 1.png" alt="Apple" class="apple-logo">
+                        <span data-i18n="banner_series">iPhone 14 Series</span>
+                    </div>
+                    <h1 data-i18n="banner_title">Up to 10% off Voucher</h1>
+                    <div class="shop-now-link">
+                        <a href="#" data-i18n="shop_now">Shop Now</a>
+                        <span>→</span>
+                    </div>
+                </div>
+                <div class="banner-image">
+                    <img src="hero_endframe__cvklg0xk3w6e_large 2.png" alt="Slide 1">
+                </div>
+            </div>
+                        <div class="slide active">
+                <div class="banner-content">
+                    <div class="brand">
+                        <img src="1200px-Apple_gray_logo 1.png" alt="Apple" class="apple-logo">
+                        <span data-i18n="banner_series">iPhone 14 Series</span>
+                    </div>
+                    <h1 data-i18n="banner_title">Up to 10% off Voucher</h1>
+                    <div class="shop-now-link">
+                        <a href="#" data-i18n="shop_now">Shop Now</a>
+                        <span>→</span>
+                    </div>
+                </div>
+                <div class="banner-image">
+                    <img src="hero_endframe__cvklg0xk3w6e_large 2.png" alt="Slide 1">
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
+</main>
     <script src="dashboard.js"></script>
 </body>
 </html>
