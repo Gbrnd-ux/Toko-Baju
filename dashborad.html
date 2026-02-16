@@ -3,28 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce</title>
+    <title>E-Commerce - Toko Baju</title>
     <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
-<header>
-    <div name="dashboard">
-        Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
-    </div>
-    
-    <h3>Shop Now</h3>
-
-    <div class="bahasa">
-        Bahasa
-        <div class="dropdown-content">
-            <p style="padding: 5px 0;">English</p>
-            <hr>
-            <p style="padding: 5px 0;">Indonesia</p>
-            <hr>
-            <p style="padding: 5px 0;">日本語</p>
+    <header>
+        <div data-i18n="promo" name="dashboard">
+            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
         </div>
-    </div>
-</header>
-    
+        
+        <h3 data-i18n="shop">Shop Now</h3>
+
+        <div class="bahasa">
+            <span id="current-lang">English</span>
+            <div class="dropdown-content">
+                <p onclick="changeLanguage('id')">Indonesia</p>
+                <p onclick="changeLanguage('en')">English</p>
+                <p onclick="changeLanguage('jp')">日本語</p>
+            </div>
+        </div>
+    </header>
+
+    <script src="dashboard.js"></script>
 </body>
 </html>
