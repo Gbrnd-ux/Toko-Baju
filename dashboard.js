@@ -118,3 +118,29 @@ document.addEventListener('DOMContentLoaded', () => {
         changeLanguage(savedLang);
     }
 });
+// --- LOGIKA COUNTDOWN TIMER ---
+function startCountdown() {
+    const targetDate = new Date().getTime() + (3 * 24 * 60 * 60 * 1000) + (23 * 60 * 60 * 1000); // 3 hari 23 jam ke depan
+
+    setInterval(() => {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        const d = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const s = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerText = d.toString().padStart(2, '0');
+        document.getElementById("hours").innerText = h.toString().padStart(2, '0');
+        document.getElementById("minutes").innerText = m.innerText = m.toString().padStart(2, '0');
+        document.getElementById("seconds").innerText = s.toString().padStart(2, '0');
+    }, 1000);
+}
+
+// Panggil di DOMContentLoaded
+document.addEventListener('DOMContentLoaded', () => {
+    showSlides();
+    startCountdown(); // Jalankan timer
+    // ... kode translasi ...
+});
